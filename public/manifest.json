@@ -1,0 +1,28 @@
+{
+  "name": "IMS Portal AutoFill",
+  "version": "1.0.0",
+  "description": "AutoFill the survey",
+  "manifest_version": 3,
+  "author": "F4 & ABW",
+  "icons":{
+    "16": "logi.png",
+    "48": "logi.png",
+    "128": "logi.png"
+  },
+  "content_scripts":[
+    {
+      "matches":["https://etc.imsciences.edu.pk/Student/SubjectEvaluation"],
+      "js":["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "IMS Portal AutoFill",
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting","storage","activeTab"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "https://*/*/*"
+  ]
+}
