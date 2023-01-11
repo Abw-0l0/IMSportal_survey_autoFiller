@@ -1,4 +1,4 @@
-//gets the array "dataofex" from popup.js
+//gets the array "dataofex" from App.js
 chrome.runtime.onMessage.addListener(dataofex => {
 
     const nodeList = document.querySelectorAll('input[type="radio"]');
