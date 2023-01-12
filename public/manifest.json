@@ -18,11 +18,5 @@
   "action": {
     "default_title": "IMS Portal AutoFill",
     "default_popup": "index.html"
-  },
-  "permissions": ["scripting","storage","activeTab"],
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*",
-    "https://*/*/*"
-  ]
+  }
 }
